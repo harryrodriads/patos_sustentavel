@@ -9,7 +9,7 @@ import { useState } from "react";
 import Button from "./ButtonBlob";
 
 const inputs = [
-  { placeholder: "Nome da Empresa/Órgão", type: "text", name: "name" },
+  { placeholder: "Nome", type: "text", name: "name" },
   { placeholder: "E-mail", type: "email", name: "email" },
   { placeholder: "Assunto", type: "text", name: "subject" },
 ];
@@ -44,7 +44,7 @@ export default function OrderForm() {
 
       if (response.ok) {
         toast({
-          title: `Olá, ${formValues.name}, seu contato foi recebido. Em breve retornaremos. Obrigado!`,
+          title: `Olá, ${formValues.name}, sua Sugestão/Denúncia foi recebida. Em breve retornaremos. Obrigado!`,
           containerStyle: {
             "&>div": {
               backgroundColor: "#008037",
@@ -119,7 +119,7 @@ export default function OrderForm() {
       </InputGroup>
       <Textarea
         paddingBlockStart="20px"
-        placeholder="Digite sua mensagem..."
+        placeholder="Digite sua Sugestão ou Denúncia..."
         name="message"
         required
         value={formValues.message}

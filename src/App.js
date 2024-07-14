@@ -16,8 +16,8 @@ export default function App() {
         <Section2 />
         <Section5 />
         <Section7 />
-        <Section8 />
         <Section9 />
+        <Section8 />
       </Layout>
     </ChakraProvider>
   );
