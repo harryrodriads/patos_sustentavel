@@ -1,7 +1,7 @@
 import { Box, Button } from "@chakra-ui/react";
 import "../styles/ButtonBlob.css";
 
-function ButtonBlob({ children, blobColor = "white", ...rest }) {
+function ButtonBlob({ children, blobColor = "transparent", ...rest }) {
   return (
     <>
       <Button className="blob-btn" variant="blob" {...rest}>

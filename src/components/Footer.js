@@ -10,7 +10,7 @@ export default function Footer({ data }) {
       justifyContent="center"
       width="full"
       paddingBlock="120px"
-      backgroundColor="candyPink.900"
+      backgroundColor="#008037"
       position="relative"
     >
       <Box

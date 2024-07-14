@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex, Heading, Stack, Text } from "@chakra-ui/react";
-import bgImageSection1 from "../resources/images/bgImageIce.jpg";
+import patos_sustentavel from "../resources/images/escritorio.jpg";
 import Button from "./ButtonBlob";
 
 export default function Section5() {
@@ -9,10 +9,10 @@ export default function Section5() {
       className="smt"
       as="section"
       position="relative"
-      backgroundImage={`url(${bgImageSection1})`}
+      backgroundImage={`url(${patos_sustentavel})`}
       color="white"
       width="full"
-      height="740px"
+      height="800px"
       backgroundPosition={["top", "top", "top", "center", "center"]}
       backgroundSize={["auto", "auto", "auto", "cover", "cover"]}
       id="gallery"
@@ -33,7 +33,7 @@ export default function Section5() {
           lineHeight="1.2em"
           zIndex="2"
         >
-          Innovation through <br /> Designs.
+          Meu Bairro <br /> Sustentável
         </Heading>
         <Text
           color="charlestonGreen.900"
@@ -41,10 +41,8 @@ export default function Section5() {
           letterSpacing="0.2px"
           marginBlockEnd="36px !important"
         >
-          Lorem ipsum is simply dummy text of the printing and typesetting
-          industry <br />
-          with dummmy text. Graphics, Designing, Branding, Development
-        </Text>
+          Colabore para a preservação do meio ambiente do seu bairro,<br />pois cada pequena ação pode fazer uma grande diferença <br />quando se trata de conservar o meio ambiente <br />e garantir um futuro mais saudável e equilibrado! 
+          </Text>
         <Button
           color="charlestonGreen.900"
           textTransform="uppercase"
@@ -69,7 +67,7 @@ export default function Section5() {
             color: "white",
           }}
         >
-          launch project
+          CONTRIBUA
         </Button>
       </Stack>
     </Flex>

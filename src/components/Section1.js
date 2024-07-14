@@ -1,19 +1,20 @@
 import { Flex, Stack, Text, Heading } from "@chakra-ui/react";
-import bgImageSection1 from "../resources/images/bgImageIce.jpg";
+import patos_sustentavel from "../resources/images/escritorio.jpg";
 import Button from "./ButtonBlob";
+import { Link } from 'react-scroll';
 
 export default function Section1() {
   return (
     <Flex
       as="section"
       position="relative"
-      backgroundImage={`url(${bgImageSection1})`}
-      color="white"
+      backgroundImage={`url(${patos_sustentavel})`}
+      color="#008037"
       width="full"
       className="smt"
-      paddingBlock="120px"
+      paddingBlock="140px"
       paddingInline={["16px", "16px", "16px", "116px", "116px"]}
-      height="740px"
+      height="800px"
       backgroundAttachment="fixed"
       backgroundPosition={["top", "top", "top", "center", "center"]}
       backgroundSize={["auto", "auto", "auto", "cover", "cover"]}
@@ -33,19 +34,20 @@ export default function Section1() {
           lineHeight="1.2em"
           zIndex="2"
         >
-          Ice Cream <br /> Cakes
+          Patos de Minas,  <br />se preocupa com o Meio Ambiente!<br />
+          
         </Heading>
         <Text
-          fontSize="16px"
+          fontSize="22px"
           lineHeight="30px"
           letterSpacing="0.2px"
           marginBlockEnd="36px !important"
         >
-          Lorem ipsum is simply dummy text of the printing and typesetting
-          industry <br />
-          with dummmy text. Graphics, Designing, Branding, Development
+          <br />Este é um Projeto para a sociedade poder colaborar<br /> para a preservação e conservação do meio ambiente! 
         </Text>
-        <Button>Learn More</Button>
+        <Link to="gallery" smooth={true} duration={800}>
+          <Button>LEIA MAIS</Button>
+        </Link>
       </Stack>
     </Flex>
   );
