@@ -23,14 +23,13 @@ export default function Section8() {
         textAlign={["center", "center", "center", "left", "left"]}
         maxWidth="512px"
         minWidth="260px"
-        gridGap="16px"
+        gridGap="20px"
       >
         <Heading as="h4" fontSize="40px" textTransform="capitalize">
-          place your order
+          Contato
         </Heading>
         <Text lineHeight="28px">
-          Lorem ipsum is simply dummy text of the printing and typesetting
-          <br /> industry with dummmy text
+          Seja parceiro através de sua Empresa ou Órgão Municipal, <br /> para promover Projetos Sustentáveis de Nossa Cidade!
         </Text>
         <OrderForm />
       </Stack>

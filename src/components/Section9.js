@@ -1,6 +1,5 @@
-import { Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import ps from "../resources/images/ps.jpeg";
-import ContainerSocialNetworks from "./ContainerSocialNetwokrs";
 
 export default function Section9() {
   return (

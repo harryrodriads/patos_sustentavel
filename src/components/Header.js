@@ -6,12 +6,11 @@ import CloudIcon from "../resources/icons/CloudIconWhite.svg";
 import DesktopNavigation from "./DesktopNavigation";
 
 const navigation = [
-  { title: "home", url: "#home" },
-  { title: "about", url: "#about" },
-  { title: "gallery", url: "#gallery" },
-  { title: "pricing", url: "#pricing" },
-  { title: "reviews", url: "#reviews" },
-  { title: "order now", url: "#orderNow" },
+  { title: "Inicio", url: "#home" },
+  { title: "Sobre", url: "#about" },
+  { title: "Meu Bairro", url: "#gallery" },
+  { title: "Sugestões", url: "#reviews" },
+  { title: "Contato", url: "#orderNow" },
 ];
 
 export default function Header({ data }) {

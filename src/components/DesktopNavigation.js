@@ -16,7 +16,7 @@ export default function DesktopNavigation({ navigation }) {
           <ListItem
             key={key}
             color="charlestonGreen.900"
-            _hover={{ color: "candyPink.900" }}
+            _hover={{ color: "#008037" }}
             marginInline="20px"
           >
             <Link

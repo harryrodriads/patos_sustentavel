@@ -9,9 +9,9 @@ import { useState } from "react";
 import Button from "./ButtonBlob";
 
 const inputs = [
-  { placeholder: "Your Name", type: "text", name: "name" },
-  { placeholder: "Your Email", type: "email", name: "email" },
-  { placeholder: "Your Subject", type: "text", name: "subject" },
+  { placeholder: "Nome da Empresa/Órgão", type: "text", name: "name" },
+  { placeholder: "E-mail", type: "email", name: "email" },
+  { placeholder: "Assunto", type: "text", name: "subject" },
 ];
 
 export default function OrderForm() {
@@ -34,10 +34,10 @@ export default function OrderForm() {
     e.preventDefault();
 
     toast({
-      title: `Hi, ${formValues.name} your order has been taken`,
+      title: `Olá, ${formValues.name} seu Contato foi recebido, em breve retornaremos. Obrigado!`,
       containerStyle: {
         "&>div": {
-          backgroundColor: "candyPink.900",
+          backgroundColor: "#008037",
           alignItems: "center",
         },
       },
@@ -69,21 +69,21 @@ export default function OrderForm() {
             _placeholder={{ color: "white" }}
             paddingInline="6px"
             _focus={{
-              borderColor: "candyPink.900",
-              boxShadow: " 0px 1px 0px 0px #EF7474",
+              borderColor: "#008037",
+              boxShadow: " 0px 1px 0px 0px #008037",
             }}
             _autofill={{
               textFillColor: "#ffff",
-              boxShadow: "0 0 0px 1000px #EF7474 inset",
+              boxShadow: "0 0 0px 1000px #008037 inset",
               borderRadius: "6px",
-              borderColor: "candyPink.900",
+              borderColor: "#008037",
             }}
           />
         ))}
       </InputGroup>
       <Textarea
         paddingBlockStart="20px"
-        placeholder="Your message..."
+        placeholder="Digite sua mensagem..."
         name="message"
         required
         value={formValues.message}
@@ -93,21 +93,21 @@ export default function OrderForm() {
         borderRadius="none"
         _placeholder={{ color: "white" }}
         _focus={{
-          borderColor: "candyPink.900",
-          boxShadow: " 0px 1px 0px 0px #EF7474",
+          borderColor: "#008037",
+          boxShadow: " 0px 1px 0px 0px #008037",
         }}
       />
       <Button
         textTransform="capitalize"
-        color="charlestonGreen.900"
+        color="#008037"
         backgroundColor="white"
-        blobColor="candyPink.900"
+        blobColor="#008037"
         type="submit"
         _before="none"
-        _hover={{ color: "white" }}
-        _focus={{ color: "white" }}
+        _hover={{ color: "#7ED957" }}
+        _focus={{ color: "#7ED957" }}
       >
-        send message
+        ENVIAR
       </Button>
     </FormControl>
   );
