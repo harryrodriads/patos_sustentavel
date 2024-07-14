@@ -16,7 +16,7 @@ export default function ServiceCard({ title, description, icon, ...rest }) {
         left: 0,
         top: 0,
         border: "2px solid",
-        borderColor: "candyPink.900",
+        borderColor: "#008037",
         position: "absolute",
         content: `""`,
         width: "full",
@@ -27,8 +27,8 @@ export default function ServiceCard({ title, description, icon, ...rest }) {
       cursor="pointer"
       _hover={{
         "&>div": {
-          backgroundColor: "white",
-          color: "candyPink.900",
+          backgroundColor: "#7ED957",
+          color: "#008037",
         },
       }}
       paddingBlockStart="18px"
@@ -61,7 +61,7 @@ export default function ServiceCard({ title, description, icon, ...rest }) {
               as="span"
               key={index}
               className="blob-btn__blob"
-              backgroundColor="candyPink.900"
+              backgroundColor="#008037"
             ></Box>
           ))}
         </Box>
@@ -71,7 +71,7 @@ export default function ServiceCard({ title, description, icon, ...rest }) {
         borderRadius="full"
         width="56px"
         height="56px"
-        backgroundColor="candyPink.900"
+        backgroundColor="#008037"
         color="white"
         justifyContent="center"
         alignItems="center"

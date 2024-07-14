@@ -1,5 +1,5 @@
 import { Flex } from "@chakra-ui/react";
-import ps from "../resources/images/ps.jpeg";
+import cidade from "../resources/images/cidade.jpeg";
 import RatingCard from "./RatingCard";
 
 const ratingCard = [
@@ -14,7 +14,7 @@ export default function Section9() {
   return (
 <Flex
       position="relative"
-      backgroundImage={`url(${ps})`}
+      backgroundImage={`url(${cidade})`}
       color="white"
       width="full"
       height="740px"
@@ -34,10 +34,12 @@ export default function Section9() {
         "flex-start",
       ]}
       className="smt"
+      
     >
       {ratingCard.map((card, key) => (
         <RatingCard key={key} data={card} />
       ))}
+      
     </Flex>
   );
 }

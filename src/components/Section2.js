@@ -1,30 +1,18 @@
 import { Flex, Stack } from "@chakra-ui/react";
-import bgImageSection2 from "../resources/images/bgImageIce2.jpg";
+import bgImageSection2 from "../resources/images/ps.jpeg";
 import CardServices from "./ServiceCard";
-import CakeIcon from "../resources/icons/CakeIcon";
-import GloveIcon from "../resources/icons/GloveIcon";
-import IceCreamIcon from "../resources/icons/IceCreamIcon";
 
 const rigthCards = [
   {
-    title: "best cake",
-    description: "Simply dummy text of the print has been standard.",
-    icon: <CakeIcon />,
+    title: "Praças",
+    description: "Práticas Sustentáveis em Praças.",
   },
   {
-    title: "dessert",
-    description: "Simply dummy text of the print has been standard.",
-    icon: <IceCreamIcon />,
+    title: "Reciclagem",
+    description: "Práticas Sustentáveis com Reciclagem.",
   },
 ];
 
-const leftCards = [
-  {
-    title: "cake design",
-    description: "Simply dummy text of the print has been standard.",
-    icon: <GloveIcon />,
-  },
-];
 
 export default function Section2() {
   return (
@@ -51,15 +39,6 @@ export default function Section2() {
         justifyContent="center"
         alignContent="center"
       >
-        {leftCards.map((card, key) => (
-          <CardServices
-            key={key}
-            alignSelf="center"
-            title={card.title}
-            description={card.description}
-            icon={card.icon}
-          />
-        ))}
         <Stack direction="column" gridGap="10px">
           {rigthCards.map((card, key) => (
             <CardServices

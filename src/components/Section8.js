@@ -1,12 +1,12 @@
 import { Flex, Text, Heading, Stack } from "@chakra-ui/react";
-import bgImageSection8 from "../resources/images/bgImageIce8.jpg";
+import contato from "../resources/images/contato.png";
 import OrderForm from "./OrderForm";
 
 export default function Section8() {
   return (
     <Flex
       position="relative"
-      backgroundImage={`url(${bgImageSection8})`}
+      backgroundImage={`url(${contato})`}
       color="white"
       width="full"
       height="740px"

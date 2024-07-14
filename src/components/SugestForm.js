@@ -66,7 +66,7 @@ export default function OrderForm() {
           title: 'Ocorreu um erro ao enviar o formulário. Tente novamente mais tarde.',
           containerStyle: {
             "&>div": {
-              backgroundColor: "#ff0000",
+              backgroundColor: "#008037",
               alignItems: "center",
             },
           },
@@ -79,7 +79,7 @@ export default function OrderForm() {
         title: 'Ocorreu um erro ao enviar o formulário. Tente novamente mais tarde.',
         containerStyle: {
           "&>div": {
-            backgroundColor: "#ff0000",
+            backgroundColor: "#008037",
             alignItems: "center",
           },
         },

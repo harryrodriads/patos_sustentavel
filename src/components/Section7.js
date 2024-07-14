@@ -1,12 +1,12 @@
 import { Flex, Text, Heading, Stack } from "@chakra-ui/react";
-import bgImageSection8 from "../resources/images/bgImageIce7.jpg";
+import ideia from "../resources/images/ideia.jpeg";
 import SugestForm from "./SugestForm";
 
 export default function Section8() {
   return (
     <Flex
       position="relative"
-      backgroundImage={`url(${bgImageSection8})`}
+      backgroundImage={`url(${ideia})`}
       color="white"
       width="full"
       height="740px"
@@ -29,7 +29,7 @@ export default function Section8() {
           Sugestão / Denúncia
         </Heading>
         <Text lineHeight="28px">
-        Envie sua Sugestão ou Denúncia sobre práticas sustentáveis na Nossa Cidade. Sua contribuição pode aparecer no nosso painel!
+        Envie sua Sugestão ou Denúncia sobre práticas sustentáveis na Nossa Cidade. Sua contribuição pode aparecer no nosso PAINEL abaixo!
         </Text>
         <SugestForm />
       </Stack>
