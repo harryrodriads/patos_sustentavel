@@ -1,16 +1,15 @@
 import { Box, Flex, Hide, Show } from "@chakra-ui/react";
-
 import Logo from "./Logo";
 import MobileNavigation from "./MobileNavigation";
 import CloudIcon from "../resources/icons/CloudIconWhite.svg";
 import DesktopNavigation from "./DesktopNavigation";
 
 const navigation = [
-  { title: "Inicio", url: "#home" },
-  { title: "Sobre", url: "#about" },
-  { title: "Meu Bairro", url: "#gallery" },
-  { title: "Sugestões", url: "#reviews" },
-  { title: "Contato", url: "#orderNow" },
+  { title: "Inicio", url: "/#inicio" },
+  { title: "Artigos", url: "/#artigos" },
+  { title: "Meu Bairro", url: "/#meu-bairro" },
+  { title: "Sugestões", url: "/#sugestoes" },
+  { title: "Contato", url: "/#contato" },
 ];
 
 export default function Header({ data }) {

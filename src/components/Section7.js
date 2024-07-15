@@ -14,7 +14,7 @@ export default function Section8() {
       className="smt"
       backgroundPosition={["top", "top", "top", "center", "center"]}
       backgroundSize="cover"
-      id="reviews"
+      id="sugestoes"
       justifyContent={["center", "center", "center", "flex-start", "flex-start"]}
       paddingBlock="120px"
       paddingInline={["20px", "20px", "20px", "116px", "116px"]}

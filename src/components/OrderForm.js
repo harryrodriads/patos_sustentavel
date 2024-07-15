@@ -102,7 +102,7 @@ export default function OrderForm() {
             type={input.type}
             onChange={handleChange}
             placeholder={input.placeholder}
-            _placeholder={{ color: "white" }}
+            _placeholder={{ color: "charlestonGreen.900" }}
             paddingInline="6px"
             _focus={{
               borderColor: "#008037",
@@ -127,7 +127,7 @@ export default function OrderForm() {
         marginBlockEnd="40px"
         variant="flushed"
         borderRadius="none"
-        _placeholder={{ color: "white" }}
+        _placeholder={{ color: "charlestonGreen.900" }}
         _focus={{
           borderColor: "#008037",
           boxShadow: " 0px 1px 0px 0px #008037",

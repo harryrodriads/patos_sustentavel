@@ -1,18 +1,20 @@
 import { Flex, Stack } from "@chakra-ui/react";
+import { Link } from "react-router-dom"; // Importando Link
 import bgImageSection2 from "../resources/images/ps.jpeg";
 import CardServices from "./ServiceCard";
 
-const rigthCards = [
+const rightCards = [
   {
     title: "Praças",
     description: "Práticas Sustentáveis em Praças.",
+    link: "/pracas", // Adicionando o link para a página de praças
   },
   {
     title: "Reciclagem",
     description: "Práticas Sustentáveis com Reciclagem.",
+    link: "/reciclagem", // Adicionando o link para a página de reciclagem
   },
 ];
-
 
 export default function Section2() {
   return (
@@ -30,7 +32,7 @@ export default function Section2() {
       backgroundPosition="top"
       backgroundSize={["auto", "auto", "auto", "cover", "cover"]}
       justifyContent={["center", "center", "center", "flex-end", "flex-end"]}
-      id="about"
+      id="artigos"
     >
       <Flex
         gridGap="10px"
@@ -40,13 +42,14 @@ export default function Section2() {
         alignContent="center"
       >
         <Stack direction="column" gridGap="10px">
-          {rigthCards.map((card, key) => (
-            <CardServices
-              key={key}
-              title={card.title}
-              description={card.description}
-              icon={card.icon}
-            />
+          {rightCards.map((card, key) => (
+            <Link to={card.link} key={key}> {/* Envolvendo cada cartão com Link */}
+              <CardServices
+                title={card.title}
+                description={card.description}
+                icon={card.icon}
+              />
+            </Link>
           ))}
         </Stack>
       </Flex>

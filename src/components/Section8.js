@@ -7,14 +7,14 @@ export default function Section8() {
     <Flex
       position="relative"
       backgroundImage={`url(${contato})`}
-      color="white"
+      color="charlestonGreen.900"
       width="full"
       height="740px"
       backgroundAttachment="fixed"
       className="smt"
       backgroundPosition={["top", "top", "top", "center", "center"]}
       backgroundSize="cover"
-      id="orderNow"
+      id="contato"
       justifyContent={["center", "center", "center", "flex-end", "flex-end"]}
       paddingBlock="120px"
       paddingInline={["20px", "20px", "20px", "116px", "116px"]}

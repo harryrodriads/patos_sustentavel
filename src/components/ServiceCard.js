@@ -48,7 +48,7 @@ export default function ServiceCard({ title, description, icon, ...rest }) {
         width="full"
         height="full"
         borderRadius="3xl"
-        background="transparent"
+        background="#7ED957"
       >
         <Box
           position="relative"
