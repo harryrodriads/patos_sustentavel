@@ -10,8 +10,8 @@ const rightCards = [
     link: "/agua", // Adicionando o link para a página de praças
   },
   {
-    title: "Reciclagem",
-    description: "Práticas Sustentáveis com Reciclagem.",
+    title: "Recicle o Lixo da Sua Casa",
+    description: "Adote práticas simples para reciclar e fazer a diferença!",
     link: "/reciclagem", // Adicionando o link para a página de reciclagem
   },
 ];

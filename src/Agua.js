@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Flex, Heading, Stack, Text, Button } from "@chakra-ui/react";
-import patos_sustentavel from "./resources/images/escritorio.jpg";
+import patos_sustentavel from "./resources/images/arvore.jpg";
 import { FaThumbsUp, FaThumbsDown } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 export default function Agua() {
+  const navigate = useNavigate(); // Hook para navegação
+
   useEffect(() => {
     window.scrollTo(0, 0);
     // Atualiza o contador de acessos no localStorage
@@ -27,6 +30,11 @@ export default function Agua() {
   // Funções para manipular likes e dislikes
   const handleLike = () => setLikes(likes + 1);
   const handleDislike = () => setDislikes(dislikes + 1);
+
+  // Função para voltar à página inicial
+  const goToHomePage = () => {
+    navigate('/');
+  };
 
   return (
     <Flex
@@ -106,6 +114,16 @@ export default function Agua() {
             _hover={{ backgroundColor: "red.600" }} 
           >
             Descurtir {dislikes}
+          </Button>
+          <Button
+            marginLeft="20px"
+            colorScheme="blue"
+            onClick={goToHomePage}
+            backgroundColor="blue.500"
+            color="white"
+            _hover={{ backgroundColor: "blue.600" }}
+          >
+            Voltar
           </Button>
         </Flex>
       </Stack>
