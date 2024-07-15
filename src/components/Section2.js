@@ -5,9 +5,9 @@ import CardServices from "./ServiceCard";
 
 const rightCards = [
   {
-    title: "Praças",
-    description: "Práticas Sustentáveis em Praças.",
-    link: "/pracas", // Adicionando o link para a página de praças
+    title: "Consumo Consciente de Água",
+    description: "Repense e otimize a forma como a utilizamos esse recurso!",
+    link: "/agua", // Adicionando o link para a página de praças
   },
   {
     title: "Reciclagem",

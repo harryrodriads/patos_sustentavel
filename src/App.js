@@ -8,7 +8,7 @@ import Section7 from "./components/Section7";
 import Section8 from "./components/Section8";
 import Section9 from "./components/Section9";
 import Ipanema from "./Ipanema";
-import Pracas from "./Pracas";
+import Agua from "./Agua";
 import Reciclagem from "./Reciclagem";
 import theme from "./theme";
 import ScrollToTop from "./hooks/useScrollToTop"; // Atualize o caminho conforme necessário
@@ -17,7 +17,7 @@ export default function App() {
   return (
     <ChakraProvider resetCSS theme={theme}>
       <Router>
-        <ScrollToTop /> {/* Adicione o ScrollToTop aqui */}
+        <ScrollToTop />
         <Layout>
           <Routes>
             <Route path="/" element={
@@ -30,7 +30,7 @@ export default function App() {
                 <Section8 />
               </>
             } />
-            <Route path="/pracas" element={<Pracas />} />
+            <Route path="/agua" element={<Agua />} />
             <Route path="/reciclagem" element={<Reciclagem />} />
             <Route path="/ipanema" element={<Ipanema />} />
           </Routes>
