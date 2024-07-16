@@ -44,7 +44,7 @@ export default function Section5() {
           marginBlockEnd="36px !important"
         >
           Ajude a preservar o meio ambiente do seu bairro!<br />Cada pequena ação pode fazer uma grande diferença 
-          <br />na conservação ambiental e contribuir para um futuro mais saudável e equilibrado.  <br /><br />
+          na conservação <br />ambiental e contribuir para um futuro mais saudável e equilibrado.  <br /><br />
           Explore os bairros disponíveis e descubra como você pode fazer a diferença hoje mesmo!
           </Text>
           <Link to="/ipanema">
