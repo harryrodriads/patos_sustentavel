@@ -20,7 +20,7 @@ export default function Header({ data }) {
       width="full"
       alignItems="center"
       top="0"
-      height="90px"
+      height="100px"
       zIndex="5"
       position="sticky"
       backgroundColor="white"
@@ -33,17 +33,6 @@ export default function Header({ data }) {
       <Show above="lg">
         <DesktopNavigation navigation={navigation} />
       </Show>
-      <Box
-        as="figure"
-        bgRepeat="repeat-x"
-        width="full"
-        height="60px"
-        left="0"
-        top="52px"
-        zIndex="5"
-        position="absolute"
-        backgroundImage={`url(${CloudIcon})`}
-      />
     </Flex>
   );
 }
