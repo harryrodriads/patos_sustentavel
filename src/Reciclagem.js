@@ -7,28 +7,23 @@ import { useNavigate } from "react-router-dom";
 
 export default function Reciclagem() {
   const navigate = useNavigate();
+  const [activeButton, setActiveButton] = useState(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    updateAccessCount();
+    const storedButtonState = localStorage.getItem("reciclagemActiveButton");
+    if (storedButtonState) {
+      setActiveButton(storedButtonState);
+    }
   }, []);
-
-  const updateAccessCount = () => {
-    const currentCount = parseInt(localStorage.getItem("accessCount")) || 0;
-    localStorage.setItem("accessCount", currentCount + 1);
-    setAccessCount(currentCount + 1);
-  };
-
-  const [accessCount, setAccessCount] = useState(parseInt(localStorage.getItem("accessCount")) || 0);
-
-  const [likes, setLikes] = useState(0);
-  const [dislikes, setDislikes] = useState(0);
-
-  const handleLike = () => setLikes(likes + 1);
-  const handleDislike = () => setDislikes(dislikes + 1);
 
   const goToHomePage = () => {
     navigate('/');
+  };
+
+  const handleButtonClick = (buttonType) => {
+    setActiveButton(buttonType);
+    localStorage.setItem("reciclagemActiveButton", buttonType);
   };
 
   return (
@@ -88,23 +83,23 @@ export default function Reciclagem() {
             <Button
               colorScheme="teal"
               leftIcon={<FaThumbsUp />}
-              onClick={handleLike}
               marginRight="10px"
-              backgroundColor="teal.500"
+              backgroundColor={activeButton === 'like' ? "teal.700" : "teal.500"}
               color="white"
               _hover={{ backgroundColor: "teal.600" }} 
+              onClick={() => handleButtonClick('like')}
             >
-              Curtir {likes}
+              Curtir 
             </Button>
             <Button
               colorScheme="red"
               leftIcon={<FaThumbsDown />}
-              onClick={handleDislike}
-              backgroundColor="red.500" 
+              backgroundColor={activeButton === 'dislike' ? "red.700" : "red.500"} 
               color="white" 
               _hover={{ backgroundColor: "red.600" }} 
+              onClick={() => handleButtonClick('dislike')}
             >
-              Descurtir {dislikes}
+              Descurtir
             </Button>
             <Button
               colorScheme="blue"
