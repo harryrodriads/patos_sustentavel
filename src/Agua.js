@@ -90,9 +90,6 @@ export default function Agua() {
           <br />
           <br /><strong>Pense nisso:</strong> Como suas pequenas escolhas diárias podem impactar a preservação da água em nossa comunidade e no planeta?
         </Text>
-        <Text color="charlestonGreen.900" fontSize="lg" marginTop="20px">
-          <strong>Leitores Totais:</strong> {accessCount}
-        </Text>
         <Flex direction="row" align="center" marginTop="20px">
           <Button
             colorScheme="teal"

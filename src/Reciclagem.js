@@ -84,10 +84,6 @@ export default function Reciclagem() {
             <br />
             <br /><strong>Pense nisso:</strong> Como suas ações diárias podem ajudar a reduzir o lixo e contribuir para um ambiente mais sustentável?
           </Text>
-
-          <Text color="charlestonGreen.900" fontSize="lg" marginTop="20px">
-            <strong>Leitores Totais:</strong> {accessCount}
-          </Text>
           <Flex direction="row" align="center" marginTop="20px" gap="10px">
             <Button
               colorScheme="teal"
