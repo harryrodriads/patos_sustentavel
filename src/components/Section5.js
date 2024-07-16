@@ -49,60 +49,31 @@ export default function Section5() {
           </Text>
           <Link to="/ipanema">
             <Button
+              textTransform="capitalize"
               color="#008037"
-              textTransform="uppercase"
-              blobColor="transparent"
-              width="auto"
-              src= "/ipanema"
-              _before={{
-                zIndex: 1,
-                left: 0,
-                top: 0,
-                border: "2px solid",
-                borderColor: "#008037",
-                position: "absolute",
-                content: `""`,
-                width: "full",
-                height: "full",
-                borderRadius: "3xl",
-              }}
-              _hover={{
-                color: "#008037",
-              }}
-              _focus={{
-                color: "#008037",
-              }}
-              mr="4"
+              backgroundColor="white"
+              blobColor="#008037"
+              type="submit"
+              _before="none"
+              _hover={{ color: "#7ED957" }}
+              _focus={{ color: "#7ED957" }}
+              mr= "4"
             >
               IPANEMA
             </Button>
             <Button
+              textTransform="capitalize"
               color="gray.500"
-              textTransform="uppercase"
-              blobColor="transparent"
-              width="auto"
-              src="/cidade-nova"
+              backgroundColor="gray.200"
+              blobColor="gray.500"
+              type="button"
               isDisabled
-              _before={{
-                zIndex: 1,
-                left: 0,
-                top: 0,
-                border: "2px solid",
-                borderColor: "gray.500",
-                position: "absolute",
-                content: `""`,
-                width: "full",
-                height: "full",
-                borderRadius: "3xl",
-              }}
-              _hover={{
-                color: "gray.500",
-              }}
-              _focus={{
-                color: "gray.500",
-              }}
+              _before="none"
+              _hover={{ color: "gray.700" }}
+              _focus={{ color: "gray.700" }}
               _disabled={{
                 backgroundColor: "gray.200",
+                color: "gray.400",
                 cursor: "not-allowed",
               }}
               mr="4"
@@ -110,32 +81,18 @@ export default function Section5() {
               CIDADE NOVA
             </Button>
             <Button
+              textTransform="capitalize"
               color="gray.500"
-              textTransform="uppercase"
-              blobColor="transparent"
-              width="auto"
-              src="/planalto"
+              backgroundColor="gray.200"
+              blobColor="gray.500"
+              type="button"
               isDisabled
-              _before={{
-                zIndex: 1,
-                left: 0,
-                top: 0,
-                border: "2px solid",
-                borderColor: "gray.500",
-                position: "absolute",
-                content: `""`,
-                width: "full",
-                height: "full",
-                borderRadius: "3xl",
-              }}
-              _hover={{
-                color: "gray.500",
-              }}
-              _focus={{
-                color: "gray.500",
-              }}
+              _before="none"
+              _hover={{ color: "gray.700" }}
+              _focus={{ color: "gray.700" }}
               _disabled={{
                 backgroundColor: "gray.200",
+                color: "gray.400",
                 cursor: "not-allowed",
               }}
               mr="4"
@@ -143,37 +100,23 @@ export default function Section5() {
               PLANALTO
             </Button>
             <Button
+              textTransform="capitalize"
               color="gray.500"
-              textTransform="uppercase"
-              blobColor="transparent"
-              width="auto"
-              src="/jardim-julia"
+              backgroundColor="gray.200"
+              blobColor="gray.500"
+              type="button"
               isDisabled
-              _before={{
-                zIndex: 1,
-                left: 0,
-                top: 0,
-                border: "2px solid",
-                borderColor: "gray.500",
-                position: "absolute",
-                content: `""`,
-                width: "full",
-                height: "full",
-                borderRadius: "3xl",
-              }}
-              _hover={{
-                color: "gray.500",
-              }}
-              _focus={{
-                color: "gray.500",
-              }}
+              _before="none"
+              _hover={{ color: "gray.700" }}
+              _focus={{ color: "gray.700" }}
               _disabled={{
                 backgroundColor: "gray.200",
+                color: "gray.400",
                 cursor: "not-allowed",
               }}
               mr="4"
             >
-              JARDIM JÚLIA
+              IPANEMA II
             </Button>
           </Link>
       </Stack>

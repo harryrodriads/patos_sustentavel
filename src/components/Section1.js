@@ -46,7 +46,18 @@ export default function Section1() {
           <br />Este é um Projeto para a sociedade poder colaborar<br /> para a preservação e conservação do meio ambiente! 
         </Text>
         <Link to="meu-bairro" smooth={true} duration={800}>
-          <Button>LEIA MAIS</Button>
+          <Button
+            textTransform="capitalize"
+            color="#008037"
+            backgroundColor="white"
+            blobColor="#008037"
+            type="submit"
+            _before="none"
+            _hover={{ color: "#7ED957" }}
+            _focus={{ color: "#7ED957" }}
+          >
+            LEIA MAIS
+          </Button>
         </Link>
       </Stack>
     </Flex>
