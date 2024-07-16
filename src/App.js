@@ -11,7 +11,7 @@ import Ipanema from "./Ipanema";
 import Agua from "./Agua";
 import Reciclagem from "./Reciclagem";
 import theme from "./theme";
-import ScrollToTop from "./hooks/useScrollToTop"; // Atualize o caminho conforme necessário
+import ScrollToTop from "./hooks/useScrollToTop";
 
 export default function App() {
   return (
