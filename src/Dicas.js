@@ -55,7 +55,7 @@ export default function Agua() {
           lineHeight="1.2em"
           zIndex="2"
         >
-          Dicas Úteis para o Dia-a-Dia<br /> 
+          Dicas Úteis <br /> 
         </Heading>
         <Text
           color="charlestonGreen.900"

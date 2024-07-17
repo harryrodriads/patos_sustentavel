@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Flex, Heading, Stack, Text, Box } from "@chakra-ui/react";
+import { Flex, Heading, Stack, Text, Box, Button } from "@chakra-ui/react";
 import patos_sustentavel from "./resources/images/escritorio.jpg";
 
 export default function Pracas() {
@@ -53,6 +53,20 @@ export default function Pracas() {
             <br />
             <br />
             <br />
+            <Button
+              textTransform="capitalize"
+              color="#008037"
+              backgroundColor="white"
+              _hover={{ color: "#7ED957" }}
+              _focus={{ color: "#7ED957" }}
+              mr="4"
+              as="a"
+              href="/public/Rota 09 - Ipanema  Viação Pássaro Branco.pdf"
+              download
+              colorScheme="teal"
+            >
+              BAIXAR
+            </Button>
           </Text>
         </Stack>
 
