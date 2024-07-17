@@ -50,10 +50,10 @@ export default function Pracas() {
             lineHeight="30px"
             letterSpacing="0.2px"
           >
-            <br />O Bairro Ipanema enfrenta vários desafios ambientais, como o descarte inadequado de lixo, 
+            <br />O bairro enfrenta vários desafios ambientais, como o descarte inadequado de lixo, 
             a falta de preservação das árvores das praças e calçadas, o consumo excessivo de água para lavar calçadas, e
             além disso, a sobrecarga de carros em horários de pico que intensifica a poluição do ar e os congestionamentos.         
-            Para melhorar a situação, veja o que você pode fazer:
+            Para melhorar a situação, veja o que podemos fazer:
             <br />
             <br />• <strong>Descarte Adequado de Lixo:</strong> Use as lixeiras corretamente como a foto ao lado e separe resíduos recicláveis.{" "}
             <Link href="/reciclagem" color="#008037" textDecoration="underline">
