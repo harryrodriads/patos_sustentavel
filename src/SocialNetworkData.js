@@ -7,23 +7,23 @@ const data = [
   {
     socialNetwork: "Facebook",
     icon: <FacebookIcon />,
-    url: "https://www.facebook.com/",
+    url: "https://www.facebook.com/patos-sustentavel",
     pl: "6px",
   },
   {
     socialNetwork: "Instagram",
     icon: <InstagramIcon />,
-    url: "https://www.instagram.com/",
+    url: "https://www.instagram.com/patos-sustentavel",
   },
   {
     socialNetwork: "Github",
     icon: <GithubIcon />,
-    url: "https://github.com/",
+    url: "https://github.com/harryrodriads",
   },
   {
     socialNetwork: "Twitter",
     icon: <TwitterIcon />,
-    url: "https://twitter.com/",
+    url: "https://twitter.com/patos-sustentavel",
     pt: "2px",
   },
 ];
