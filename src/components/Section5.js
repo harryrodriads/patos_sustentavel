@@ -34,7 +34,7 @@ export default function Section5() {
           lineHeight="1.2em"
           zIndex="2"
         >
-          Meu Bairro <br /> Sustentável
+          Meu Bairro Sustentável
         </Heading>
         <Text
           color="charlestonGreen.900"
@@ -43,9 +43,9 @@ export default function Section5() {
           letterSpacing="0.2px"
           marginBlockEnd="36px !important"
         >
-          Ajude a preservar o meio ambiente do seu bairro!<br />Cada pequena ação pode fazer uma grande diferença 
+          <br />Ajude a preservar o meio ambiente do seu bairro!<br />Cada pequena ação pode fazer uma grande diferença 
           na conservação <br />ambiental e contribuir para um futuro mais saudável e equilibrado.  <br /><br />
-          Explore os bairros disponíveis e descubra como você pode fazer a diferença hoje mesmo!
+          Explore os bairros disponíveis do Projeto e descubra como ajudar hoje mesmo!
           </Text>
           <Link to="/ipanema">
             <Button

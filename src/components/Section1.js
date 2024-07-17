@@ -30,11 +30,21 @@ export default function Section1() {
       >
         <Heading
           as="h2"
-          fontSize={["3rem", "3rem", "4rem", "5rem", "5rem"]}
+          fontSize={["3rem", "3rem", "5rem", "7rem", "7rem"]}
+          lineHeight="1.2em"
+          zIndex="2"
+          textAlign="center"
+        >
+          Patos de Minas,
+          
+        </Heading>
+        <Heading
+          as="h2"
+          fontSize={["3rem", "3rem", "4rem", "4rem", "4rem"]}
           lineHeight="1.2em"
           zIndex="2"
         >
-          Patos de Minas,  <br />se preocupa com o Meio Ambiente!<br />
+        se preocupa com o <br />Meio Ambiente!<br />
           
         </Heading>
         <Text
