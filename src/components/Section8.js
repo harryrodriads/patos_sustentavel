@@ -1,4 +1,4 @@
-import { Flex, Text, Heading, Stack } from "@chakra-ui/react";
+import { Flex, Stack } from "@chakra-ui/react";
 import contato from "../resources/images/contato.png";
 import OrderForm from "./OrderForm";
 
@@ -25,12 +25,6 @@ export default function Section8() {
         minWidth="260px"
         gridGap="20px"
       >
-        <Heading as="h4" fontSize="40px" textTransform="capitalize">
-          Contato
-        </Heading>
-        <Text lineHeight="28px">
-          Seja parceiro através de sua Empresa ou Órgão Municipal, <br /> para promover Projetos Sustentáveis de Nossa Cidade!
-        </Text>
         <OrderForm />
       </Stack>
     </Flex>

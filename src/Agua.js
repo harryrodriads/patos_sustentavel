@@ -17,7 +17,7 @@ export default function Agua() {
   }, []);
 
   const goToHomePage = () => {
-    navigate('/');
+    navigate('/#artigos');
   };
 
   const handleButtonClick = (buttonType) => {

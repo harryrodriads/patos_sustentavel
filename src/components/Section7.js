@@ -25,10 +25,10 @@ export default function Section8() {
         minWidth="260px"
         gridGap="20px"
       >
-        <Heading as="h4" fontSize="40px" textTransform="capitalize">
+        <Heading as="h4" fontSize="40px" textAlign="center" textTransform="capitalize">
           Sugestão / Denúncia
         </Heading>
-        <Text lineHeight="28px">
+        <Text lineHeight="28px" fontSize="22px">
         Envie sua Sugestão ou Denúncia sobre práticas sustentáveis na Nossa Cidade. Sua contribuição pode aparecer no nosso PAINEL abaixo!
         </Text>
         <SugestForm />

@@ -4,6 +4,10 @@ import {
   InputGroup,
   Textarea,
   useToast,
+  Box,
+  Heading,
+  Text,
+  Stack,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import Button from "./ButtonBlob";
@@ -90,61 +94,75 @@ export default function OrderForm() {
   };
 
   return (
-    <FormControl as="form" onSubmit={handleSubmit} marginBlockStart="36px">
-      <InputGroup variant="flushed" flexDirection="column" gridGap="12px">
-        {inputs.map((input, key) => (
-          <Input
-            key={key}
+    <Box
+      background="rgba(255, 255, 255, 0.8)"
+      padding="20px"
+      borderRadius="8px"
+      boxShadow="0 0 10px rgba(0, 0, 0, 0.1)"
+      maxWidth="600px"
+      margin="auto"
+    >
+      <Stack spacing={4}>
+      <Heading as="h4" textAlign= "center" fontSize="40px" textTransform="capitalize">
+          Contato
+        </Heading>
+        <Text lineHeight="28px" fontSize="22px">
+          Seja parceiro através de sua Empresa ou Órgão Municipal, para promover Projetos Sustentáveis de Nossa Cidade!
+        </Text>
+        <FormControl as="form" onSubmit={handleSubmit} marginBlockStart="36px">
+          <InputGroup variant="flushed" flexDirection="column" gridGap="12px">
+            {inputs.map((input, key) => (
+              <Input
+                key={key}
+                required
+                name={input.name}
+                autoComplete={input.name}
+                value={formValues[input.name]}
+                type={input.type}
+                onChange={handleChange}
+                placeholder={input.placeholder}
+                _placeholder={{ color: "charlestonGreen.900" }}
+                paddingInline="6px"
+                _focus={{
+                  borderColor: "charlestonGreen.900",
+                }}
+                _autofill={{
+                  textFillColor: "charlestonGreen.900",
+                  borderRadius: "6px",
+                  borderColor: "charlestonGreen.900",
+                }}
+              />
+            ))}
+          </InputGroup>
+          <Textarea
+            paddingBlockStart="20px"
+            placeholder="Digite sua mensagem..."
+            name="message"
             required
-            name={input.name}
-            autoComplete={input.name}
-            value={formValues[input.name]}
-            type={input.type}
+            value={formValues.message}
             onChange={handleChange}
-            placeholder={input.placeholder}
+            marginBlockEnd="40px"
+            variant="flushed"
+            borderRadius="none"
             _placeholder={{ color: "charlestonGreen.900" }}
-            paddingInline="6px"
             _focus={{
-              borderColor: "#008037",
-              boxShadow: " 0px 1px 0px 0px #008037",
-            }}
-            _autofill={{
-              textFillColor: "#ffff",
-              boxShadow: "0 0 0px 1000px #008037 inset",
-              borderRadius: "6px",
-              borderColor: "#008037",
+              borderColor: "charlestonGreen.900",
             }}
           />
-        ))}
-      </InputGroup>
-      <Textarea
-        paddingBlockStart="20px"
-        placeholder="Digite sua mensagem..."
-        name="message"
-        required
-        value={formValues.message}
-        onChange={handleChange}
-        marginBlockEnd="40px"
-        variant="flushed"
-        borderRadius="none"
-        _placeholder={{ color: "charlestonGreen.900" }}
-        _focus={{
-          borderColor: "#008037",
-          boxShadow: " 0px 1px 0px 0px #008037",
-        }}
-      />
-      <Button
-        textTransform="capitalize"
-        color="#008037"
-        backgroundColor="white"
-        blobColor="#008037"
-        type="submit"
-        _before="none"
-        _hover={{ color: "#7ED957" }}
-        _focus={{ color: "#7ED957" }}
-      >
-        ENVIAR
-      </Button>
-    </FormControl>
+          <Button
+            textTransform="capitalize"
+            color="#008037"
+            backgroundColor="white"
+            blobColor="#008037"
+            type="submit"
+            _before="none"
+            _hover={{ color: "#7ED957" }}
+            _focus={{ color: "#7ED957" }}
+          >
+            ENVIAR
+          </Button>
+        </FormControl>
+      </Stack>
+    </Box>
   );
 }

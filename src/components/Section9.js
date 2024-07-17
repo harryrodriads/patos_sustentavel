@@ -1,5 +1,5 @@
 import { Flex } from "@chakra-ui/react";
-import cidade from "../resources/images/cidade.jpeg";
+import cidade from "../resources/images/ps.jpeg";
 import RatingCard from "./RatingCard";
 
 const ratingCard = [

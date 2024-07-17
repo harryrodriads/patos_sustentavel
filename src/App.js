@@ -9,6 +9,8 @@ import Section8 from "./components/Section8";
 import Section9 from "./components/Section9";
 import Ipanema from "./Ipanema";
 import Agua from "./Agua";
+import Transporte from "./Transporte";
+import Dicas from "./Dicas";
 import Reciclagem from "./Reciclagem";
 import theme from "./theme";
 import ScrollToTop from "./hooks/useScrollToTop";
@@ -33,6 +35,8 @@ export default function App() {
             <Route path="/agua" element={<Agua />} />
             <Route path="/reciclagem" element={<Reciclagem />} />
             <Route path="/ipanema" element={<Ipanema />} />
+            <Route path="/transporte" element={<Transporte />} />
+            <Route path="/dicas" element={<Dicas />} />
           </Routes>
         </Layout>
       </Router>

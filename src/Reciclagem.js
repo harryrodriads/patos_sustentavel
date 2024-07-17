@@ -18,7 +18,7 @@ export default function Reciclagem() {
   }, []);
 
   const goToHomePage = () => {
-    navigate('/');
+    navigate('/#artigos');
   };
 
   const handleButtonClick = (buttonType) => {

@@ -1,18 +1,28 @@
-import { Flex, Stack } from "@chakra-ui/react";
-import { Link } from "react-router-dom"; // Importando Link
-import bgImageSection2 from "../resources/images/ps.jpeg";
+import { Flex, Grid } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import bgImageSection2 from "../resources/images/contato.png";
 import CardServices from "./ServiceCard";
 
 const rightCards = [
   {
     title: "Consumo Consciente de Água",
     description: "Repense e otimize a forma como a utilizamos esse recurso!",
-    link: "/agua", // Adicionando o link para a página de praças
+    link: "/agua",
   },
   {
     title: "Recicle o Lixo da Sua Casa",
     description: "Adote práticas simples para reciclar e fazer a diferença!",
-    link: "/reciclagem", // Adicionando o link para a página de reciclagem
+    link: "/reciclagem",
+  },
+  {
+    title: "Transportes Sustentáveis",
+    description: "Veja como podemos ajudar a reduzir a poluição!",
+    link: "/transporte",
+  },
+  {
+    title: "Dicas Úteis para nosso Dia-a-Dia",
+    description: "Transforme seu bairro em um lugar mais agradável!",
+    link: "/dicas",
   },
 ];
 
@@ -22,7 +32,7 @@ export default function Section2() {
       as="section"
       position="relative"
       backgroundImage={`url(${bgImageSection2})`}
-      color="white"
+      color="charlestonGreen.900"
       width="full"
       className="smt"
       paddingBlock="120px"
@@ -33,26 +43,22 @@ export default function Section2() {
       backgroundSize={["auto", "auto", "auto", "cover", "cover"]}
       justifyContent={["center", "center", "center", "flex-end", "flex-end"]}
       id="artigos"
+      textAlign="center"
     >
-      <Flex
-        gridGap="10px"
-        alignItems="center"
-        flexWrap="wrap"
-        justifyContent="center"
-        alignContent="center"
+      
+      <Grid
+        templateColumns={["1fr", "1fr", "1fr", "1fr 1fr", "1fr 1fr"]}
+        gap={10}
       >
-        <Stack direction="column" gridGap="10px">
-          {rightCards.map((card, key) => (
-            <Link to={card.link} key={key}> {/* Envolvendo cada cartão com Link */}
-              <CardServices
-                title={card.title}
-                description={card.description}
-                icon={card.icon}
-              />
-            </Link>
-          ))}
-        </Stack>
-      </Flex>
+        {rightCards.map((card, key) => (
+          <Link to={card.link} key={key}>
+            <CardServices
+              title={card.title}
+              description={card.description}
+            />
+          </Link>
+        ))}
+      </Grid>
     </Flex>
   );
 }
