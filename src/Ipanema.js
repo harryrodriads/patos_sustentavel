@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-import { Flex, Heading, Stack, Text, Box, Button } from "@chakra-ui/react";
+import { Flex, Heading, Stack, Text, Box, Button, Image, Link } from "@chakra-ui/react";
 import patos_sustentavel from "./resources/images/escritorio.jpg";
+import reciclagem from "./resources/images/cores.jpg";
 
 export default function Pracas() {
   useEffect(() => {
@@ -45,23 +46,34 @@ export default function Pracas() {
           </Heading>
           <Text
             color="charlestonGreen.900"
+            fontSize="18px"
             lineHeight="30px"
             letterSpacing="0.2px"
           >
-            meu bairro,<br />
+            <br />O Bairro Ipanema enfrenta vários desafios ambientais, como o descarte inadequado de lixo, 
+            a falta de preservação das árvores das praças e calçadas, o consumo excessivo de água para lavar calçadas, e
+            além disso, a sobrecarga de carros em horários de pico que intensifica a poluição do ar e os congestionamentos.         
+            Para melhorar a situação, veja o que você pode fazer:
             <br />
-            <br />
-            <br />
-            <br />
+            <br />• <strong>Descarte Adequado de Lixo:</strong> Use as lixeiras corretamente como a foto ao lado e separe resíduos recicláveis.{" "}
+            <Link href="/reciclagem" color="#008037" textDecoration="underline">
+              Veja neste Artigo!
+            </Link>
+            <br />• <strong>Preservação das Árvores:</strong> Participe de iniciativas de plantio e cuide das árvores das calçadas e das praças.
+            <br />• <strong>Economia de Água:</strong> Faça sua parte dentro de casa! Feche as torneiras, tome banhos curtos e conserte vazamentos.{" "}
+            <Link href="/agua" color="#008037" textDecoration="underline">
+              Veja estas Dicas!
+            </Link>
+            <br />• <strong>Reduza o Trânsito:</strong> Use transporte público, compartilhe caronas ou ande de bicicleta. Baixe a Rota e Horários do Ônibus: 
             <Button
               textTransform="capitalize"
-              color="#008037"
-              backgroundColor="white"
+              color="#7ED957"
+              backgroundColor="#008037"
               _hover={{ color: "#7ED957" }}
               _focus={{ color: "#7ED957" }}
-              mr="4"
+              ml="4"
               as="a"
-              href="/public/Rota 09 - Ipanema  Viação Pássaro Branco.pdf"
+              href="/Rota 09 - Ipanema  Viação Pássaro Branco.pdf"
               download
               colorScheme="teal"
             >
@@ -69,11 +81,20 @@ export default function Pracas() {
             </Button>
           </Text>
         </Stack>
-
+        <Image
+          src={reciclagem}
+          alt="Imagem de Reciclagem"
+          width={["300px", "300px", "400px", "500px", "600px"]}
+          height="auto"
+          objectFit="contain"
+          borderRadius="md"
+          marginTop={["20px", "20px", "20px", "0", "0"]}
+          marginLeft={["0", "0", "0", "20px", "20px"]}
+        />
         <Box
-          flex="0.8"
-          width="75%"
-          height="75%"
+          flex="0.6"
+          width="70%"
+          height="70%"
           bg="gray.200"
           borderRadius="md"
         >
