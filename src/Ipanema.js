@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Flex, Heading, Stack, Text, Box, Button, Image, Link } from "@chakra-ui/react";
-import patos_sustentavel from "./resources/images/escritorio.jpg";
+import patos_sustentavel from "./resources/images/jarro.jpeg";
 import reciclagem from "./resources/images/cores.jpg";
 
 export default function Pracas() {
@@ -59,7 +59,7 @@ export default function Pracas() {
             <Link href="/reciclagem" color="#008037" textDecoration="underline">
               Veja neste Artigo!
             </Link>
-            <br />• <strong>Preservação das Árvores:</strong> Participe de iniciativas de plantio e cuide das árvores das calçadas e das praças.
+            <br />• <strong>Preservação das Árvores:</strong> Participe dos plantios de árvores na praça e ajude na preservação das plantas das calçadas e praça.
             <br />• <strong>Economia de Água:</strong> Faça sua parte dentro de casa! Feche as torneiras, tome banhos curtos e conserte vazamentos.{" "}
             <Link href="/agua" color="#008037" textDecoration="underline">
               Veja estas Dicas!
@@ -68,6 +68,7 @@ export default function Pracas() {
             <Button
               textTransform="capitalize"
               color="#7ED957"
+              borderColor="#008037"
               backgroundColor="#008037"
               _hover={{ color: "#7ED957" }}
               _focus={{ color: "#7ED957" }}
@@ -93,8 +94,8 @@ export default function Pracas() {
         />
         <Box
           flex="0.6"
-          width="70%"
-          height="70%"
+          width="60%"
+          height="60%"
           bg="gray.200"
           borderRadius="md"
         >
