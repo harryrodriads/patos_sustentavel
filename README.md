@@ -1,5 +1,7 @@
 # Site para Atividade Extensionista II de ADS - Uninter
 
+![image](https://github.com/user-attachments/assets/1ce9eb0e-5db8-4a84-a5a5-5814a85ec149)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
